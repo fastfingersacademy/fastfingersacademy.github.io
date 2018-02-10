@@ -22,7 +22,26 @@
 
   gtag('config', 'UA-62770752-3');
 </script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<!-- fullstory --> 
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'AE92M';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    y="rec";g.shutdown=function(i,v){g(y,!1)};g.restart=function(i,v){g(y,!0)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+<!-- fullstory --> 
 
 </head>
 
@@ -42,9 +61,9 @@
                 <!--Optin Trigger-->
                 <a id="optin-button" data-lead-id="purchase-button1" href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" 
                             onclick="gtag('event', 'click', {
-                              'event_category': 'buttons',
+                              'event_category': 'button-1',
                             'event_action': 'click',
-                            'event_label': 'hello'
+                            'event_label': 'none'
                             });">
                     <u>Click Here</u> To Learn Guitar &raquo;</a>
                 <!--End Optin Trigger-->
@@ -221,10 +240,18 @@
             <div class="constrain">
             <img src="img/arrow.png" alt="arrow" class="arrow" data-lead-id="arrow-img">
                 <!--Optin Trigger-->
-                <a id="optin-button2" data-lead-id="purchase-button2" href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar">
+                <a id="optin-button2" data-lead-id="purchase-button2" href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" onclick="gtag('event', 'click', {
+                              'event_category': 'button-2',
+                            'event_action': 'click',
+                            'event_label': 'none'
+                            });">
                     <u>Click Here</u> To Add To Cart &raquo;</a>
             </div>
-                <a href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" class="buy" data-lead-id="buy-link">Click Here To Buy This Product</a>
+                <a href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" class="buy" data-lead-id="buy-link" onclick="gtag('event', 'click', {
+                              'event_category': 'button-3',
+                            'event_action': 'click',
+                            'event_label': 'none'
+                            });">Click Here To Buy This Product</a>
             
                 <!--End Optin Trigger-->
                     <div class="payment-info" data-lead-id="payment-section2">
@@ -315,10 +342,18 @@
                 <div class="constrain">
                 <img src="img/arrow-red.png" alt="arrow" class="arrow" data-lead-id="arrow-img2">
                     <!--Optin Trigger-->
-                    <a id="optin-button3" data-lead-id="purchase-button3" href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar">
+                    <a id="optin-button3" data-lead-id="purchase-button3" href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" onclick="gtag('event', 'click', {
+                              'event_category': 'button-4',
+                            'event_action': 'click',
+                            'event_label': 'none'
+                            });">
                         <u>Click Here</u> To Add To Cart &raquo;</a>
                     </div>
-                    <a href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" class="buy" data-lead-id="buy-link2">Click Here To Buy This Product</a>
+                    <a href="https://sso.teachable.com/secure/142887/checkout/551659/masterclass-fingerstyle-guitar" class="buy" data-lead-id="buy-link2" onclick="gtag('event', 'click', {
+                              'event_category': 'button-5',
+                            'event_action': 'click',
+                            'event_label': 'none'
+                            });">Click Here To Buy This Product</a>
                 
                     <!--End Optin Trigger-->
                     <div class="payment-info" data-lead-id="payment-section3">
