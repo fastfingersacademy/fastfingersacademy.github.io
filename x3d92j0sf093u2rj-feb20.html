@@ -26,7 +26,57 @@
 		</head>
 
 	<body class="lr-site">
+<section id="hidden" style="height: 100vh; background-color: #222; color: #fff; z-index: 10000" class="site-block block--html site-block--8ytz1a7l7pbbcvrtchvouukf9">
+		<div class="site-block__bg-image site-block__bg-image--8ytz1a7l7pbbcvrtchvouukf9"></div>
+		<div class="container">
+			<div class="row">
+				<div class="site-block__col-wrap col-xs-12">
+					<div class="site-block__col site-block__col--0 rel">
+						<div class="site-block__col-bg-image site-block__col-bg-image--0"></div>
+						<div class="site-block__content" style="text-align: center;">
+						<img style="width:370px;" src="img/logo.png" alt="logo" data-lead-id="logo" id="logo">
 
+							<h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px; color: #444; "><strong>Become a Guitarist.</strong> <span> Then Learn Guitar.</span></h1>
+<p style="text-align: center;"><span style="font-size: 20px; color: #444">Play your favorite songs in minutes. Keep improving at your own pace with the online classroom and Facebook community.</span>
+</p>
+
+<h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px; ">Sorry.</h1> <h2 style="text-align: center; padding-top: 10px; padding-bottom: 10px; ">Unfortunately, it looks like you have missed your sign-up window. </h2>
+
+
+<h3 style="text-align: center; margin-top: 30px; margin-bottom: 10px;">Join The Waiting List </h3>
+<!-- Begin MailChimp Signup Form -->
+
+<div id="mc_embed_signup"><form id="mc-embedded-subscribe-form" class="validate" action="https://advanceguitar.us15.list-manage.com/subscribe/post?u=ac063dde01933228fd2885614&amp;id=b78a550889" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+<div id="mc_embed_signup_scroll">
+<div class="mc-field-group" style="text-align: center;"><input style="width:60%; min-width: 250px; font-size: 2rem; line-height: 1.5; padding: 5px; border: none; border-radius: 5px; margin-bottom: 15px; color:#222" id="mce-EMAIL" class="required email" name="EMAIL" type="email" value="" placeholder="Your Best Email Address" /></div>
+<div style="position: absolute; left: -5000px; text-align: center;"><input tabindex="-1" name="b_ac063dde01933228fd2885614_b78a550889" type="text" value="" /></div>
+<div class="clear form-group" style="text-align: center;"><input id="mc-embedded-subscribe" class="btn-lg" style="	background: rgba(252,94,27,1);
+background: -moz-linear-gradient(top, rgba(252,94,27,1) 0%, rgba(252,154,27,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,94,27,1)), color-stop(100%, rgba(252,154,27,1)));
+background: -webkit-linear-gradient(top, rgba(252,94,27,1) 0%, rgba(252,154,27,1) 100%);
+background: -o-linear-gradient(top, rgba(252,94,27,1) 0%, rgba(252,154,27,1) 100%);
+background: -ms-linear-gradient(top, rgba(252,94,27,1) 0%, rgba(252,154,27,1) 100%);
+background: linear-gradient(to bottom, rgba(252,94,27,1) 0%, rgba(252,154,27,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc5e1b', endColorstr='#fc9a1b', GradientType=0 ); color: #222; border: none; font-weight: bolder; letter-spacing: 0.0325em; " name="subscribe" type="submit" value="Let Me In!" onclick="gtag('event', 'click', {
+                              'event_category': 'rejoin-1',
+                            'event_action': 'click',
+                            'event_label': 'none'
+                            });" /></div>
+<div></div>
+</div>
+</form>
+
+</div>
+<!--End mc_embed_signup-->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<div id="body" > 
 					<section id="site-block--8ytz1a7l7pbbcvrtchvouukf9" style="background-color: #222; color: #fff; z-index: 10000" class="site-block block--html site-block--8ytz1a7l7pbbcvrtchvouukf9">
 		<div class="site-block__bg-image site-block__bg-image--8ytz1a7l7pbbcvrtchvouukf9"></div>
 		<div class="container">
@@ -47,6 +97,14 @@
 	</section>
 
 <style> 
+
+.hide{
+	display: none
+}
+
+#hidden{
+	display: none
+}
 
 .countdown,
  .countdown2{
@@ -963,7 +1021,7 @@ background: rgba(255,255,255,0.9);
 	s.parentNode.insertBefore(g,s);
 })(); </script>
 				
-
+</div>
 			
 	</body>
 </html>
@@ -972,6 +1030,12 @@ background: rgba(255,255,255,0.9);
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
+  if (t < 0){
+
+    document.getElementById('body').className = 'hide';
+    document.getElementById('hidden').style.display='block';
+
+  }
   var seconds = Math.floor((t / 1000) % 60);
   var minutes = Math.floor((t / 1000 / 60) % 60);
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
